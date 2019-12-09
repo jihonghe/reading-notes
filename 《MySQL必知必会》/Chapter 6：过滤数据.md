@@ -1,7 +1,7 @@
 **`WHERE`的基础用法：`WHERE`子句用于对检索结果按照指定的条件进行过滤**
 <br>
 **数据表(提供数据)**
-![数据表](leanote://file/getImage?fileId=5de50aa8ab64411743006e8f)
+![数据表](./static/images/students.png)
 <br>
 **`WHERE`的使用**：`SELECT * FROM students WHERE class_id=1;`
 <br>

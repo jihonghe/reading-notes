@@ -1,7 +1,7 @@
 **`WHERE`与`AND`, `OR`, `IN`和`NOT IN`的组合用法**
 <br>
 **数据表(数据操作)**
-![数据表](leanote://file/getImage?fileId=5de65860ab644155d30030b8)
+![数据表](./static/images/students.png)
 <br>
 **操作符**
 | 操作符 | 说明 |
