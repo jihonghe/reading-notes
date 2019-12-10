@@ -15,11 +15,11 @@
 **示例**
 
 - 使用`%`匹配
-- 匹配名字以"小"开头的学生：`SELECT * FROM students WHERE name LIKE '小%';`
-- 匹配名字以"明"结尾的学生：`SELECT * FROM students WHERE name LIKE '%明';`
-- 匹配名字中含有"红"的学生：`SELECT * FROM students WHERE name LIKE '%红%';`
+  - 匹配名字以"小"开头的学生：`SELECT * FROM students WHERE name LIKE '小%';`
+  - 匹配名字以"明"结尾的学生：`SELECT * FROM students WHERE name LIKE '%明';`
+  - 匹配名字中含有"红"的学生：`SELECT * FROM students WHERE name LIKE '%红%';`
 - 使用`_`匹配
-- 匹配名字以"小"开头且名字为两个字的学生：`SELECT * FROM students WHERE name LIKE '小_';`
+  - 匹配名字以"小"开头且名字为两个字的学生：`SELECT * FROM students WHERE name LIKE '小_';`
 
 <br>
 
