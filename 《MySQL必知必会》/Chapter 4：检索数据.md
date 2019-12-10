@@ -11,6 +11,7 @@
 - 检索所有列：
   `SELECT * FROM 数据表名;`，使用通配符`*`所得的结果中，列的出现顺序一般为表定义中出现的顺序，可通过`SELECT COLUMNS FROM 数据表名;`获取表定义的列的顺序及信息
 <br>
+
 - 对检索使用`DISTINCT`约束：
   使用`DISTINCT`来约束指定的列的值，使得检索所得的结果中至少有一列的值在每一行中是唯一的。具体示例如下：
   - 数据表students：
@@ -21,6 +22,7 @@
   **`DISTINCT`可以约束单列吗？**
   不能。无法使用`DISTINCT`约束多列值，达到预期的结果。
 <br>
+
 - `LIMIT`限制查询返回的结果数：
   - 用法1：`LIMIT return_amount`
     只限制返回结果数，以students表为例，查询学生信息并只返回5条：`SELECT * FROM students LIMIT 5;`

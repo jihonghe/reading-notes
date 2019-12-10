@@ -12,6 +12,7 @@
 **一个简单的示例**：`SELECT Concat(vend_name, '-', vendor-country) FROM vendors;`，该查询语句的返回结果生成计算字段`CONCAT(vender_name, '-', vendor-country)`，一般而言，如果不指定别名，计算字段名称即为字段计算的字符串形式。
 <br>
 下面介绍一些可用于字段计算的函数、关键字以及运算符。
+
 | 名称 | 说明 | 示例 |
 | :----: | :----: | :----- |
 | `CONCAT()` |字符串拼接函数 | `SELECT CONCAT('(', vend_name, ')') FROM vendors;` |

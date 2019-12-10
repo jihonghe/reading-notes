@@ -32,5 +32,6 @@
     - `SELECT * FROM students ORDER BY class_id, score DESC, gender;`
 
 <br>
+
 **`FROM`, `ORDER BY`, `LIMIT`之间的顺序问题**
 `FROM` --> `ORDER BY` --> `LIMIT`，三者的顺序若是出错则会引起SQL错误。

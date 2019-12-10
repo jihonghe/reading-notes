@@ -1,9 +1,12 @@
 **`WHERE`与`AND`, `OR`, `IN`和`NOT IN`的组合用法**
 <br>
+
 **数据表(数据操作)**
 ![数据表](./static/images/students.png)
 <br>
+
 **操作符**
+
 | 操作符 | 说明 |
 | :----: | :--: |
 | `AND` | '与'操作符，指前后两个条件均要满足 |
@@ -26,5 +29,6 @@
     - `SELECT * FROM students WHERE class_id NOT IN (1, 2);`
 
 <br>
+
 **`WHERE`与操作符的混合组合**
 混合组合不再举例，混合组合能够进行复杂的查询，可以自由发挥。
