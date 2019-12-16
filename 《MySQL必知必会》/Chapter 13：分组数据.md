@@ -14,6 +14,8 @@
 `SELECT vend_id, COUNT(*) AS num_prods FROM products GROUP BY vend_id;`
 查询结果如下(`GROUP BY`即为分组关键字)：
 ![查询结果1](static/images/group_by_result01.png)
+  
+所以，简单总结就是`GROUP BY`的作用就是对数据表中的数据进行分类汇总并可以使用聚合函数进行统计分析。
 
 ## 二、什么是数据分组
 
@@ -27,7 +29,16 @@
 统计`products`表中各个供应商提供的产品数：`SELECT vend_id, COUNT(*) AS num_prods FROM products GROUP BY vend_id;`
 查询结果如下(`GROUP BY`即为分组关键字)：
 ![查询结果1](static/images/group_by_result01.png)
-**查询语句分析**：通过查询结果图可以看到，有别于普通的`SELECT`查询，查询所得结果是
+**查询语句分析**：这是最基本的用法。通过查询结果图可以看到，有别于普通的`SELECT`查询，查询所得结果是按照`GROUP BY`的字段`vend_id`进行展示的，而统计所得结果`num_prods`统计的是分组后每组中的记录数。
+  
+以上只是`GROUP BY`的简单使用，下面是`GROUP BY`相关的规则：
+
+- 如果SQL中存在`WHERE`子句，则`GROUP BY`要在`WHERE`之后
+  - **解析**：这与MySQL语句的执行顺序相关，`WHERE`子句是针对数据表中原有的行(或记录)进行过滤，过滤所得结果仍让是行；`GROUP BY`是对行进行针对性分组，所得结果是多个组，每个组由符合`GROUP BY`要求(具有相同值的列)的行组成。因此，若是`WHERE`在`GROUP BY`之后执行，则会直接报错，因为`WHERE`过滤的数据不再是行。另，也可以将`GROUP BY`所得的组视作多个虚拟表。
+- 若SQL中存在`ORDER BY`子句，则`GROUP BY`要在`ORDER BY`之前
+  - **解析**：
+- 除聚合计算语句外(如`COUNT`)，`SELECT`中的每个列都必须在`GROUP BY`子句中给出。
+- 
 
 ### 2. 过滤分组
 
